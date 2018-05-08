@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha server/**/*.test.js",
-    "test-watch": "nodemon --exec 'npm test'"
+    "test-watch": "nodemon --exec 'npm test'",
+    "eslint": "./node_modules/.bin/eslint",
+    "eslint-watch": "nodemon --exec 'eslint'"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +18,9 @@
     "mongoose": "^5.0.17"
   },
   "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
     "expect": "^1.20.2",
     "mocha": "^5.1.1",
     "nodemon": "^1.17.4",
